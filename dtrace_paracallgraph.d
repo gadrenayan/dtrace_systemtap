@@ -13,3 +13,6 @@ pid$target:a.out::entry
 pid$target:a.out::return
 {
 }
+
+# If the script does not work then directly use: 
+# dtrace -F -n 'pid$target:a.out::entry,pid$target:a.out::return' -c /bin/ls
